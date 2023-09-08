@@ -26,6 +26,21 @@ body{
     padding: 20px 0;
 }
 
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.main-menu a:hover {
+    transition: color 0.5s;
+    color: rgb(178,120,250);
+}
+
+main p {
+    text-align: justify;
+}
+
 .main-menu-second-webs {
     font-size: 1.2rem;
     font-weight: 10px;
@@ -41,21 +56,6 @@ body{
 .main-menu-second-webs a:hover {
     transition: color 0.5s;
     color: rgb(178,120,250);
-}
-
-.main-menu a {
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-}
-
-.main-menu a:hover {
-    transition: color 0.5s;
-    color: rgb(178,120,250);
-}
-
-main p {
-    text-align: justify;
 }
 
 .avatar {
