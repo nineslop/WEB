@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+/*.name {
+    text-transform: uppercase;
+}*/
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.main-menu {
+    font-size: 1.2rem;
+    font-weight: 10px;
+    padding: 20px 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.main-menu a:hover {
+    transition: color 0.5s;
+    color: rgb(178,120,250);
+}
+
+main p {
+    text-align: justify;
+}
+
+.avatar {
+    height: 350px;
+    text-align: center;
+    margin: 2rem 0;
+    background-image: url(../images/background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid rgb(107, 5, 232);
+    padding: 8px 20px;
+    border-radius: 6px;
+    background: rgb(107, 5, 232);
+}
+
+.btn:hover {
+    transition: color 0.5s, border-color 0.5s;
+    color: white;
+    border-color: rgb(178,120,250);
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.contact-me-btn {
+    color: white !important;
+    border-color: rgb(107, 5, 232);
+    font-size: 1.2;
+    display: inline-block;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.py-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.w-50 {
+    max-width: 50%;
+}
+
+.my-3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
