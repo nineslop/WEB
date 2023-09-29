@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Веб-разработчик Иванов В. В.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="main-menu-second-webs"> 
+                    <a href="index.html">На главную</a>
+                </nav>
+                <div class="text-center py-5">
+                </div>
+            </div>
+        </header>
+
+        <main class="feedback-second-list">
+            <div class="allfeedback">
+                <form action="https://httpbin.org/post" method="get" class="feeeeedback">
+                    <div class="feedbackOP">
+                        <label for="name">ФИО</label>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                    <div class="feedbackOP">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div class="feedbackOP">
+                        <input type="submit">
+                    </div>
+                    <div class="feedbackinfo">
+                        <fieldset>
+                            <legend>Откуда вы о нас узнали?</legend>
+                            <label><input type="radio" name="radio" value="ad" />Реклама</label>
+                            <label><input type="radio" name="radio" value="relatives" />От родствеников</label>
+                            <label><input type="radio" name="radio" value="Univer" />От университета</label>
+                        </fieldset>
+                    </div>
+                    <div class="feedbackinvocation">
+                        <label for="type">Тип обращения</label>
+                        <select name="type" id="type">
+                            <option value="complaint">Жалоба</option>
+                            <option value="proposal">Предложение</option>
+                        </select>
+                    </div>
+                    <div class="feedbackmessage">
+                        <label for="message">Текст сообщения:</label>
+                        <textarea name="message" id="message" rows="10"></textarea>
+                    </div>
+                    <div class="feedbackFAIL">
+                        <label for="attachments">Вложения (файл)</label>
+                        <input type="file" id="attachments" name="attachments">
+                    </div>
+                    <div class="feedbackCheckbox">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            Даю согласие на обработку персональных данных
+                        </label>
+
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="container">
+                &copy; Иванов В. В.
+            </div>
+        </footer> 
+    </body>
+</html>
