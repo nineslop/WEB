@@ -3,9 +3,9 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* html {
-    background-color: rgb(35, 36, 36);
-} */
+html {
+    background-color: #f2f2f2;
+}
 
 .header {
     background-color: black;
@@ -111,6 +111,15 @@ main p {
     margin: 0 20px;
 }
 
+.allauthorization {
+    max-width: 40vw;
+    border-radius: 70px;
+    padding: 50px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    margin: 5% auto 5% auto;
+}
+
 #contactus {
     text-align: center;
     margin-top: 0;
@@ -165,6 +174,14 @@ main p {
 
 #checkboxP {
     display: inline-block;
+}
+
+#password {
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding: 5px 0;
 }
 
 fieldset {
