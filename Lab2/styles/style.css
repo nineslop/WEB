@@ -79,36 +79,100 @@ main p {
     display: grid;
 }
 
-/* .feedbackinfo {
+.feedbackSubmit {
+    text-align: right;
+    margin-right: 20px;
+}
 
+.feedbackinfo {
+    max-width: 100%;
+    margin: 0 20px;
 }
 
 .feedbackinvocation {
-
+    text-align: right;
+    max-width: 100%;
+    margin: 20px;
 }
 
 .feedbackmessage {
-
+    max-width: 100%;
+    margin: 0 20px;
 }
 
 .feedbackFAIL {
-
+    text-align: right;
+    max-width: 100%;
+    margin: 20px;
 }
 
-.feedbackcheckbox {
+.feedbackCheckbox {
+    display: inline-block;
+    margin: 0 20px;
+}
 
-} */
+#contactus {
+    text-align: center;
+    margin-top: 0;
+}
+
+#type {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 9px;
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+}
+
+#message {
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding: 5px 0;
+}
+
+
+#submit {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 9px;
+    padding: 13px;
+    margin: 20px 0;
+}
 
 #name {
-    width: 500px;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding: 5px 0;
 }
 
 #email {
-    width: 500px;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding: 5px 0;
+}
+
+#attachments {
+    display: block;
+    width: min-content;
+}
+
+#checkboxP {
+    display: inline-block;
+}
+
+fieldset {
+    border-radius: 10px;
 }
 
 form .feedbackOP {
-    display: table;
+    display: grid;
     margin: 20px;
 }
 

@@ -21,17 +21,19 @@
 
         <main class="feedback-second-list">
             <div class="allfeedback">
-                <form action="https://httpbin.org/post" method="get" class="feeeeedback">
+                <h2 id="contactus">Свяжитесь с нами!</h2>
+                <form action="https://httpbin.org/post" method="post" class="feeeeedback">
                     <div class="feedbackOP">
-                        <label for="name">ФИО</label>
-                        <input type="text" name="name" id="name" required />
+                        <fieldset>
+                            <legend>ФИО</legend>
+                            <input type="text" name="name" id="name" required />
+                        </fieldset>
                     </div>
                     <div class="feedbackOP">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required />
-                    </div>
-                    <div class="feedbackOP">
-                        <input type="submit">
+                        <fieldset>
+                            <legend>Email</legend>
+                            <input type="email" name="email" id="email" required />
+                        </fieldset>
                     </div>
                     <div class="feedbackinfo">
                         <fieldset>
@@ -42,27 +44,33 @@
                         </fieldset>
                     </div>
                     <div class="feedbackinvocation">
-                        <label for="type">Тип обращения</label>
-                        <select name="type" id="type">
-                            <option value="complaint">Жалоба</option>
-                            <option value="proposal">Предложение</option>
-                        </select>
+                        <fieldset>
+                            <legend>Тип обращения</legend>
+                            <select name="type" id="type">
+                                <option value="complaint">Жалоба</option>
+                                <option value="proposal">Предложение</option>
+                            </select>
+                        </fieldset>
                     </div>
                     <div class="feedbackmessage">
-                        <label for="message">Текст сообщения:</label>
-                        <textarea name="message" id="message" rows="10"></textarea>
+                        <fieldset>
+                            <legend>Текст сообщения</legend>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </fieldset>
                     </div>
                     <div class="feedbackFAIL">
-                        <label for="attachments">Вложения (файл)</label>
-                        <input type="file" id="attachments" name="attachments">
+                        <fieldset>
+                            <legend>Вложения (файл)</legend>
+                            <input type="file" id="attachments" name="attachments">
+                        </fieldset>
                     </div>
                     <div class="feedbackCheckbox">
-                        <label>
-                            <input type="checkbox" name="consent" required>
-                            Даю согласие на обработку персональных данных
-                        </label>
-
-                        <button type="submit">Отправить</button>
+                        <input type="checkbox" name="consent" required>
+                        <p id="checkboxP">Даю согласие на обработку персональных данных</p>
+                    </div>
+                    <div class="feedbackSubmit">
+                        <input id="submit" type="submit">                                  
+                    </div>
                     </div>
                 </form>
             </div>
