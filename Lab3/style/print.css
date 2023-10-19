@@ -1,0 +1,14 @@
+/* Стили для печати */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, nav, .sidebar, footer {
+    display: none; /* Скрыть элементы управления и сайдбар при печати */
+}
+
+main {
+    flex-direction: column;
+}
+
+/* Убедитесь, что текст и изображения печатаются читабельно и хорошо оформлены. */
