@@ -1,0 +1,195 @@
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Montserrat;
+  color-scheme: dark !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  background: linear-gradient(to left, rgba(20, 37, 76, 0.49), rgba(37, 71, 104, 0.47), rgba(12, 117, 139, 0.52), rgba(0, 161, 197, 0.53));
+}
+
+.index-page .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index-page .page {
+  background-color: #599ed3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px 50px;
+  margin: 20px;
+}
+.index-page .page a {
+  text-decoration: none;
+  color: #223340;
+  font-size: 40px;
+}
+
+.calc-page .screen {
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0 #275476 inset, 0 0 10px 4px #5c7486;
+  background: rgba(0, 0, 0, 0.3137254902);
+  color: #ffffff;
+  width: 100%;
+  height: clamp(50px, 8vh, 8vh);
+  border-radius: 100vh;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.calc-page .buttons {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+}
+.calc-page .buttons .digits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+}
+.calc-page .buttons .other {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.calc-page .buttons .key {
+  border: none;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 100vh;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 36px;
+  margin: 15px 10px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-color: #0e1e2a;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #275476 inset, 0 0 0 0 #5c7486;
+  transition: all 150ms ease-in-out;
+  width: clamp(50px, 10vh, 10vh);
+  height: clamp(50px, 10vh, 10vh);
+  justify-content: center;
+  align-items: center;
+}
+.calc-page .buttons .key:hover {
+  box-shadow: 0 0 10px 0 #5c7486 inset, 0 0 10px 4px #275476;
+}
+
+.tic-tac-toe-page .tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+}
+.tic-tac-toe-page .tic-tac-toe-container .win-status {
+  color: #5c7486;
+  font-size: clamp(24px, 4vh, 4vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(15px, 3vh, 3vh);
+  font-weight: 500;
+  height: clamp(24px, 4vh, 4vh);
+}
+.tic-tac-toe-page .tic-tac-toe-container .field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.tic-tac-toe-page .tic-tac-toe-container .field .cell {
+  width: clamp(100px, 20vh, 30vh);
+  height: clamp(100px, 20vh, 30vh);
+  background-color: transparent;
+  margin: clamp(10px, 1vh, 1vh);
+  box-shadow: 0 0 10px 0 #275476 inset, 0 0 10px 4px #5c7486;
+  background: rgba(0, 0, 0, 0.3137254902);
+  border-radius: 3vh;
+  color: #fff;
+  font-size: clamp(85px, 17vh, 17vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tic-tac-toe-page .tic-tac-toe-container .field .cell:hover {
+  animation: pulse ease-in-out 0.8s infinite alternate;
+}
+.tic-tac-toe-page .tic-tac-toe-container .field .win-cell {
+  color: #15910a;
+}
+.tic-tac-toe-page .tic-tac-toe-container .field .lose-cell {
+  color: #630202;
+}
+.tic-tac-toe-page .tic-tac-toe-container .field .letter {
+  animation: appearance 0.2s ease-in-out;
+}
+.tic-tac-toe-page .tic-tac-toe-container .reset {
+  background-color: #5c7486;
+  color: #223340;
+  height: clamp(30px, 7vh, 7vh);
+  font-size: clamp(24px, 4vh, 4vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: clamp(9px, 2vh, 2vh);
+  margin-top: clamp(15px, 3vh, 3vh);
+}
+.tic-tac-toe-page .tic-tac-toe-container .reset:hover {
+  animation: pulse ease-in-out 0.8s infinite alternate;
+}
